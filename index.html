@@ -1,62 +1,184 @@
-<html>
-<head>
-	<meta charset="utf-8"/>
-	<title>beautiful image gallery using html only (no css used)</title>
-</head>
-<body>
-	<font face="sans-serif" color="#017bf5" size="5" align="center">
-		<h1>BEAUTIFUL IMAGE GALLERY</h1>
-	</font>
-	<font face="sans-serif" color="#444" size="3" align="center">
-		<h1>USING HTML ONLY (NO CSS USED)</h1>
-	</font>
 
-	<table align="center">
-		<tr>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679448933-bbb85ef91855?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8fHw%3D" height="350" width="400"/>
-			</td>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679485706-b81e32e29701?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693147-a1c3ca8b45e5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693155-f04036d29b48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693157-c2d5365c836d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693158-d3933a1cddca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693159-771a123ca275?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693148-bb0454eade28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8M3x8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693157-cf05a1fa05dd?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679042330-5a1971301a30?q=80&w=1529&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693159-771a123ca275?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-			<td>
-				<img src="https://images.unsplash.com/photo-1717679693159-771a123ca275?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="350" width="400"/>
-			</td>
-		</tr>
-	</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Portal</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#0077cc;
+    color:white;
+    padding:15px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li{
+    display:inline;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:#e6f2ff;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+form{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>InternHub</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#internships">Internships</a></li>
+<li><a href="#apply">Apply</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>Find Your Dream Internship</h1>
+<p>Explore internships from top companies and kickstart your career.</p>
+<button>Browse Internships</button>
+</section>
+
+<section class="container" id="internships">
+<h2>Available Internships</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Web Development Intern</h3>
+<p>Company: Tech Solutions</p>
+<p>Duration: 3 Months</p>
+<button>Apply</button>
+</div>
+
+<div class="card">
+<h3>Data Science Intern</h3>
+<p>Company: DataWorks</p>
+<p>Duration: 4 Months</p>
+<button>Apply</button>
+</div>
+
+<div class="card">
+<h3>UI/UX Design Intern</h3>
+<p>Company: Creative Studio</p>
+<p>Duration: 2 Months</p>
+<button>Apply</button>
+</div>
+
+</div>
+</section>
+
+<section class="container" id="apply">
+<h2>Apply for Internship</h2>
+
+<form>
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>College</label>
+<input type="text" placeholder="Your college">
+
+<label>Why do you want this internship?</label>
+<textarea rows="4"></textarea>
+
+<button type="submit">Submit Application</button>
+</form>
+
+</section>
+
+<section class="container" id="contact">
+<h2>Contact Us</h2>
+<p>Email: info@internhub.com</p>
+<p>Phone: +91 98765 43210</p>
+</section>
+
+<footer>
+<p>© 2026 InternHub | Internship Portal</p>
+</footer>
+
 </body>
 </html>
-
